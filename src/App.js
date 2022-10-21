@@ -1,12 +1,29 @@
-import './App.css';
-import Header from './components/Header';
-import './style.css';
+import { ToastContainer } from "react-toastify";
+import "./App.css";
+import Contact from "./components/shared/Contact";
+import Header from "./components/shared/Header";
+import "./style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <h1>Hello World</h1>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <Header />
+      <div className="app-body">
+        <Contact />
+      </div>
+      
     </div>
   );
 }
