@@ -1,0 +1,12 @@
+.footer{
+    margin-top: 50px;
+    color: var(--secondary-color);
+    padding: 15px 12%;
+}
+
+@media (max-width: 800px) {  
+    .footer {
+        font-size: 14px;
+        padding: 10px 5%;
+    }
+  }

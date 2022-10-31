@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+  --primary-bg-color: #111827;
+  --secondary-bg-color: #0f1929;
+  --primary-color: #E6E7E7;
+  --secondary-color: #555b69;
+  --green: #1cbbab;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif !important;
+  background-color: var(--primary-bg-color) !important;
+  color: var(--primary-color);
+}
+
+.app-body {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+h1,
+h2,
+h3,
+span,
+p,
+label,
+a {
+  color: var(--primary-color);
+}
+
+p {
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--primary-color) !important;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+.gradient-text {
+  background: var(--primary-color);
+  background: linear-gradient(to right, var(--primary-color) 1%, var(--green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8d8c8c;
+}
+
+.header,
+.footer {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1000px) {
+  .app-body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .app-body {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .footer {
+    min-height: 50px;
+    font-size: 14px;
+    padding: 0% 5%;
+  }
+}

@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { BsDownload } from "react-icons/bs";
+import "./header.css";
 
 function Header() {
   useEffect(() => {
@@ -13,12 +15,17 @@ function Header() {
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <a href="#home" className="active">
-          Home
+        <a href="#about" className="active">
+          About
         </a>
-        <a href="#news">News</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="/files/cv.pdf" download="CV" target="_blank">
+          <div className="d-flex align-items-center justify-content-center gap-2">
+            <BsDownload />
+            Download CV
+          </div>
+        </a>
       </ul>
     </header>
   );

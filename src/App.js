@@ -2,8 +2,10 @@ import { ToastContainer } from "react-toastify";
 import "./App.css";
 import Contact from "./components/shared/Contact";
 import Header from "./components/shared/Header";
-import "./style.css";
+import "./common.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./components/shared/About";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
       />
       <Header />
       <div className="app-body">
+        <About />
         <Contact />
       </div>
+      <Footer />
       
     </div>
   );
