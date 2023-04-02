@@ -14,7 +14,7 @@
   padding: 20px;
 }
 
-.contact-info > div{
+.contact-info > .contact-item{
   color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -23,13 +23,19 @@
   margin: 35px 0px;
 }
 
-.contact-info > div > span{
+.contact-item:hover{
+  color: var(--green) !important;
+}
+
+.contact-info > .contact-item > span{
   color: var(--green);
 }
 
 .contact-info .social-links{
   margin-top: 50px;
   font-size: 1.7rem;
+  display: flex;
+  gap: 20px;
 }
 
 .contact-info .social-links a:hover{

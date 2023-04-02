@@ -1,0 +1,27 @@
+.skill-item span{
+    width: 150px;
+    padding-right: 20px;
+}
+
+.meter-bar{
+    height: 10px;
+    width: 85%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.meter-thumb{
+    height: 100%;
+    width: 50%;
+    background-color: var(--green);
+    border-radius: 5px;
+}
+
+.skills-list li{
+    list-style-type: disc;
+    text-align: left;
+    color: var(--green);
+}

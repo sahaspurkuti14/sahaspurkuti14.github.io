@@ -18,6 +18,7 @@ function Header() {
         <a href="#about" className="active">
           About
         </a>
+        <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
         <a href="/files/cv.pdf" download="CV" target="_blank">

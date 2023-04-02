@@ -7,6 +7,9 @@
     position: relative;
     padding: 0 12%;
     margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {

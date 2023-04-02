@@ -50,6 +50,7 @@ h2 {
   font-weight: 600;
   margin: 20px 0px;
   letter-spacing: 2px;
+  margin-bottom: 40px !important;
 }
 
 a {
@@ -57,9 +58,17 @@ a {
   color: var(--primary-color) !important;
 }
 
+.section{
+  padding: 2rem 0;
+}
+
 .error {
   font-size: 14px;
   color: red;
+}
+
+.text-pprimary{
+  color: var(--green) !important;
 }
 
 .gradient-text {
@@ -79,12 +88,8 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a5a5a4;
+  background: var(--green);
   border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #8d8c8c;
 }
 
 .header,
@@ -101,7 +106,7 @@ a {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   body {
     padding-left: 10px;
     padding-right: 10px;
